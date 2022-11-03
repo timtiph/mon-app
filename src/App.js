@@ -13,19 +13,10 @@ function App() {
 
 
 
-  // let toggleContenu;
-
-  // if (toggle) {
-  //   toggleContenu = <h1>Le state est True</h1>;
-  // } else {
-  //   toggleContenu = <h1>Le state est False</h1>;
-  // }
-
-
 
   return (
     <div className="App">
-      {toggle ? <h1>Le state est TRUE</h1> : <h1>Le state est FALSE</h1> } 
+       <div className={toggle ? "box animated" : "box"}></div>
       <button onClick={changeState}>Change state</button>
     </div>
   );
