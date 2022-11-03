@@ -1,7 +1,10 @@
-function Item() {
-    return <h1>Hello world depuis item</h1>
+function Item(props) {
 
+    console.log(props);
+
+    return <h3>{props.number}</h3>
 
 }
+
 
 export default Item;
